@@ -65,7 +65,11 @@ descriptionDechallengeRechallengeViewer <- function(id) {
             label = "Download"
           ),
           shinycssloaders::withSpinner(
-            reactable::reactableOutput(ns('tableResults'))
+           # reactable::reactableOutput(ns('tableResults'))
+            
+            resultTableViewer(ns("dechallengeRechallengeTable"),
+                              downloadedFileName = "dechallengeRechallengeTable-")
+            
           )
         )
       )
@@ -220,6 +224,8 @@ descriptionDechallengeRechallengeServer <- function(
             )
           )
           
+          
+          
           allData <- getDechalRechalInputsData(
             targetId = input$targetId,
             outcomeId = input$outcomeId,
@@ -235,71 +241,94 @@ descriptionDechallengeRechallengeServer <- function(
           dechallengeStopInterval(allData$dechallengeStopInterval)
           dechallengeEvaluationWindow(allData$dechallengeEvaluationWindow)
           
-          output$tableResults <- reactable::renderReactable(
-            {
-              reactable::reactable(
-                data = cbind(
-                  view = rep("",nrow(allData)),
-                  allData %>% dplyr::relocate("databaseName")
-                  )
-                ,
-                filterable = TRUE,
-                showPageSizeOptions = TRUE,
-                pageSizeOptions = c(10, 50, 100,1000),
-                defaultPageSize = 50,
-                striped = TRUE,
-                highlight = TRUE,
-                elementId = "desc-dechal-select",
-                
-                columns = list(  
-                  view = reactable::colDef(
-                    name = "",
-                    sortable = FALSE,
-                    cell = function() htmltools::tags$button("Plot Fails")
-                  ),
-                  targetCohortDefinitionId = reactable::colDef(show = F),
-                  databaseId = reactable::colDef(show = F),
-                  outcomeCohortDefinitionId = reactable::colDef(show = F),
-                  
-                  databaseName = reactable::colDef(name = 'Database'),
-                  
-                  pctDechallengeAttempt = reactable::colDef(
-                    format = reactable::colFormat(digits = 2, percent = T)
-                  ),
-                  pctDechallengeSuccess = reactable::colDef(
-                    format = reactable::colFormat(digits = 2, percent = T)
-                  ),
-                  pctDechallengeFail = reactable::colDef(
-                    format = reactable::colFormat(digits = 2, percent = T)
-                  ),
-                  pctRechallengeAttempt = reactable::colDef(
-                    format = reactable::colFormat(digits = 2, percent = T)
-                  ),
-                  pctRechallengeSuccess = reactable::colDef(
-                    format = reactable::colFormat(digits = 2, percent = T)
-                  ),
-                  pctRechallengeFail = reactable::colDef(
-                    format = reactable::colFormat(digits = 2, percent = T)
-                  )
-                  
-                ),
-                onClick = reactable::JS(paste0("function(rowInfo, column) {
-    // Only handle click events on the 'details' column
-    if (column.id !== 'view') {
-      return
-    }
-
-    if(column.id == 'view'){
-      Shiny.setInputValue('",session$ns('databaseRowId'),"', { index: rowInfo.index + 1 }, { priority: 'event' })
-    }
-  }")
-                )
-              )
-                
-                
-                
-            }
+          dechallengeCustomColDefs <- ParallelLogger::loadSettingsFromJson("./inst/components-columnInformation/characterization-dechallengeViewer-colDefs.json")
+          viewColDef <- list(
+            view = reactable::colDef(
+              name = "",
+              sortable = FALSE,
+              cell = function() htmltools::tags$button("Plot Fails")
+            )
           )
+          
+          dechallengeCustomColDefsMerge <- modifyList(dechallengeCustomColDefs,viewColDef)
+          
+          allData <- allData %>% 
+            dplyr::mutate(view = rep("",nrow(allData)))
+          
+          
+          resultTableServer(id = "dechallengeRechallengeTable",
+                            df = allData,
+                            colDefsInput = dechallengeCustomColDefsMerge,
+                            downloadedFileName = "dechallengeRechallengeTable-")
+          
+  #         output$tableResults <- reactable::renderReactable(
+  #           {
+  #             reactable::reactable(
+  #               data = 
+  #                 allData,
+  #               #%>% dplyr::relocate("databaseName"),
+  #               
+  #               filterable = TRUE,
+  #               showPageSizeOptions = TRUE,
+  #               pageSizeOptions = c(10, 50, 100,1000),
+  #               defaultPageSize = 50,
+  #               striped = TRUE,
+  #               highlight = TRUE,
+  #               elementId = "desc-dechal-select",
+  #               
+  #               
+  #               columns = dechallengeCustomColDefsMerge,
+  #                 
+  #                 
+  #                  list(
+  #                  view = reactable::colDef(
+  #                    name = "",
+  #                    sortable = FALSE,
+  #                    cell = function() htmltools::tags$button("Plot Fails")
+  #                  ),
+  #                  targetCohortDefinitionId = reactable::colDef(show = F),
+  #                  databaseId = reactable::colDef(show = F),
+  #                  outcomeCohortDefinitionId = reactable::colDef(show = F),
+  #                 
+  #                  databaseName = reactable::colDef(name = 'Database'),
+  #                 
+  #                  pctDechallengeAttempt = reactable::colDef(
+  #                    format = reactable::colFormat(digits = 2, percent = T)
+  #                  ),
+  #                  pctDechallengeSuccess = reactable::colDef(
+  #                    format = reactable::colFormat(digits = 2, percent = T)
+  #                  ),
+  #                  pctDechallengeFail = reactable::colDef(
+  #                    format = reactable::colFormat(digits = 2, percent = T)
+  #                ),
+  #                  pctRechallengeAttempt = reactable::colDef(
+  #                    format = reactable::colFormat(digits = 2, percent = T)
+  #                  ),
+  #                  pctRechallengeSuccess = reactable::colDef(
+  #                  format = reactable::colFormat(digits = 2, percent = T)
+  #                  ),
+  #                  pctRechallengeFail = reactable::colDef(
+  #                    format = reactable::colFormat(digits = 2, percent = T)
+  #                  )
+  # 
+  #               ),
+  #               onClick = reactable::JS(paste0("function(rowInfo, column) {
+  #   // Only handle click events on the 'details' column
+  #   if (column.id !== 'view') {
+  #     return
+  #   }
+  # 
+  #   if(column.id == 'view'){
+  #     Shiny.setInputValue('",session$ns('databaseRowId'),"', { index: rowInfo.index + 1 }, { priority: 'event' })
+  #   }
+  # }")
+  #               )
+  #             )
+  #               
+  #               
+  #               
+  #           }
+  #         )
  
         }
       )
@@ -424,6 +453,7 @@ dechalRechalGetIds <- function(
 }
 
 # pulls all data for a target and outcome
+
 getDechalRechalInputsData <- function(
   targetId,
   outcomeId,
@@ -434,7 +464,7 @@ getDechalRechalInputsData <- function(
 ){
   
   
-  shiny::withProgress(message = 'Extracting DECHALLENGE_RECHALLENGE data', value = 0, {
+ shiny::withProgress(message = 'Extracting DECHALLENGE_RECHALLENGE data', value = 0, {
   
   sql <- "SELECT dr.*, d.CDM_SOURCE_ABBREVIATION as database_name 
           FROM @result_database_schema.@table_prefixDECHALLENGE_RECHALLENGE dr 

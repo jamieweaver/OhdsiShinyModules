@@ -1,0 +1,6162 @@
+{
+  "ageGroupName": {
+    "name": "ageGroupName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Name for this Age Group"
+            },
+            "text": "Age Group Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "ageId": {
+    "name": "ageId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Age Identifier"
+            },
+            "text": "Age Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "analysisId": {
+    "name": "analysisId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Analysis Identifier"
+            },
+            "text": "Analysis Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "analysisName": {
+    "name": "analysisName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Class/Type of the Covariate"
+            },
+            "text": "Covariate Class"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "averageValue": {
+    "name": "averageValue",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Count  of the People in the Cohort with the Covariate"
+            },
+            "text": "Count Value"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cdmEtlReference": {
+    "name": "cdmEtlReference",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Common Data Model Reference"
+            },
+            "text": "Common Data Model Reference"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cdmHolder": {
+    "name": "cdmHolder",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Common Data Model Holder"
+            },
+            "text": "Common Data Model Holder"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cdmReleaseDate": {
+    "name": "cdmReleaseDate",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Common Data Model Release Date"
+            },
+            "text": "Common Data Model Release Date"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cdmSourceAbbreviation": {
+    "name": "cdmSourceAbbreviation",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Database Abbreviation"
+            },
+            "text": "Database Abbreviation"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cdmSourceName": {
+    "name": "cdmSourceName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Database Name"
+            },
+            "text": "Database Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cdmVersion": {
+    "name": "cdmVersion",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Common Data Model Version"
+            },
+            "text": "Common Data Model Version"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cleanWindow": {
+    "name": "cleanWindow",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Clean Window for this Outcome Definition"
+            },
+            "text": "Clean Window"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cohortDefinitionId": {
+    "name": "cohortDefinitionId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Identifier of the Cohort Definition "
+            },
+            "text": "Cohort Definition Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cohortName": {
+    "name": "cohortName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Name of the Cohort"
+            },
+            "text": "Cohort Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "cohortType": {
+    "name": "cohortType",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Type of Cohort"
+            },
+            "text": "Cohort Type"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "conceptId": {
+    "name": "conceptId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Concept Identifier"
+            },
+            "text": "Concept Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "countValue": {
+    "name": "countValue",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Average Value of the Covariate in the Cohort of Interest"
+            },
+            "text": "Average Value"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "covariateId": {
+    "name": "covariateId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Unique Identifier of the Covariate"
+            },
+            "text": "Covariate ID"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "covariateName": {
+    "name": "covariateName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Name of the Covariate"
+            },
+            "text": "Covariate Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "covariateSettingJson": {
+    "name": "covariateSettingJson",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Covariate Setting JSON"
+            },
+            "text": "Covariate Setting JSON"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "databaseId": {
+    "name": "databaseId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Name for a Given Database for the Results"
+            },
+            "text": "Database"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeAttempt": {
+    "name": "dechallengeAttempt",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Dechallenge Attempts Among Those Subjects Dechallenging"
+            },
+            "text": "Number of Dechallenge Attempts"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeEvaluationWindow": {
+    "name": "dechallengeEvaluationWindow",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Dechallenge Evaluation Window"
+            },
+            "text": "Dechallenge Evaluation Window"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeExposureEndDateOffset": {
+    "name": "dechallengeExposureEndDateOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the End Date Field Specified in the Dechallenge Evaluation Window"
+            },
+            "text": "Dechallenge Exposure End Date Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeExposureNumber": {
+    "name": "dechallengeExposureNumber",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Dechallenge Exposures"
+            },
+            "text": "Dechallenge Exposure Number"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeExposureStartDateOffset": {
+    "name": "dechallengeExposureStartDateOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the Start Date Field Specified in the Dechallenge Evaluation Window"
+            },
+            "text": "Dechallenge Exposure Start Date Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeFail": {
+    "name": "dechallengeFail",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Dechallenge Failures Among Those Subjects Dechallenging"
+            },
+            "text": "Number of Dechallenge Failures"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeOutcomeNumber": {
+    "name": "dechallengeOutcomeNumber",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Dechallenge Outcomes"
+            },
+            "text": "Number of Dechallenge Outcomes"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeOutcomeStartDateOffset": {
+    "name": "dechallengeOutcomeStartDateOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the Start Date Field Specified in the Dechallenge Evaluation Window"
+            },
+            "text": "Dechallenge Outcome Start Date Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeStopInterval": {
+    "name": "dechallengeStopInterval",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Days Between Challenges"
+            },
+            "text": "Dechallenge Stop Interval"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "dechallengeSuccess": {
+    "name": "dechallengeSuccess",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Dechallenge Successes Among Those Subjects Dechallenging"
+            },
+            "text": "Number of Dechallenge Successes"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "description": {
+    "name": "description",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Description"
+            },
+            "text": "Description"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "domainId": {
+    "name": "domainId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Domain Identifier"
+            },
+            "text": "Domain Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "endAnchor": {
+    "name": "endAnchor",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The End Anchor"
+            },
+            "text": "End Anchor"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "endDay": {
+    "name": "endDay",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The End Day"
+            },
+            "text": "End Day"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "genderId": {
+    "name": "genderId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Gender Identifier"
+            },
+            "text": "Gender Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "genderName": {
+    "name": "genderName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Name of the Gender"
+            },
+            "text": "Gender Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "incidenceProportionP100P": {
+    "name": "incidenceProportionP100P",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Incidence Proportion (per 100 people), Calculated by personOutcomes/ personsAtRisk * 100"
+            },
+            "text": "Incidence Proportion"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "incidenceRateP100Py": {
+    "name": "incidenceRateP100Py",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Incidence Rate (per 100 person years), Calculated by outcomes/ personDays/365.25 * 100"
+            },
+            "text": "Incidence Rate"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "isBinary": {
+    "name": "isBinary",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "0"
+            },
+            "text": "0"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "json": {
+    "name": "json",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "0"
+            },
+            "text": "0"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "maxObsPeriodEndDate": {
+    "name": "maxObsPeriodEndDate",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Maximum Observation Period End Date"
+            },
+            "text": "Maximum Observation Period End Date"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "maxValue": {
+    "name": "maxValue",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Maximum Value"
+            },
+            "text": "Maximum Value"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "medianValue": {
+    "name": "medianValue",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Class/Type of the Covariate"
+            },
+            "text": "Covariate Class"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "minValue": {
+    "name": "minValue",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Minimum Value"
+            },
+            "text": "Minimum Value"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "missingMeansZero": {
+    "name": "missingMeansZero",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "0"
+            },
+            "text": "0"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "numCases": {
+    "name": "numCases",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Number of Cases"
+            },
+            "text": "Number of Cases"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "numEvents": {
+    "name": "numEvents",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Number of Events"
+            },
+            "text": "Number of Events"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "numExposureEras": {
+    "name": "numExposureEras",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Number of Exposure Eras"
+            },
+            "text": "Number of Exposure Eras"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "numPersonsExposed": {
+    "name": "numPersonsExposed",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Number of Persons Exposed"
+            },
+            "text": "Number of Persons Exposed"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "outcomeCohortDefinitionId": {
+    "name": "outcomeCohortDefinitionId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Outcome Cohort Definition Identifier"
+            },
+            "text": "Outcome Cohort Definition ID"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "outcomeCohortId": {
+    "name": "outcomeCohortId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Outcome Cohort Definition Identifier"
+            },
+            "text": "Outcome Cohort Definition ID"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "outcomeId": {
+    "name": "outcomeId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Outcome Identifier"
+            },
+            "text": "Outcome Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "outcomeName": {
+    "name": "outcomeName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Outcome Cohort Name"
+            },
+            "text": "Outcome Cohort Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "outcomes": {
+    "name": "outcomes",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Cases After Excluding TAR"
+            },
+            "text": "Outcomes after TAR"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "outcomesPe": {
+    "name": "outcomesPe",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Cases Before Excluding TAR"
+            },
+            "text": "Outcomes"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "outcomeType": {
+    "name": "outcomeType",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Outcome Type"
+            },
+            "text": "Outcome Type"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "p10Value": {
+    "name": "p10Value",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "10% of the Calculated Estimates Will Be Equal or Exceed the P10 Estimate"
+            },
+            "text": "P10"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "p25Value": {
+    "name": "p25Value",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "25% of the Calculated Estimates Will Be Equal or Exceed the P10 Estimate"
+            },
+            "text": "P25"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "p75Value": {
+    "name": "p75Value",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "75% of the Calculated Estimates Will Be Equal or Exceed the P10 Estimate"
+            },
+            "text": "P75"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "p90Value": {
+    "name": "p90Value",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "90% of the Calculated Estimates Will Be Equal or Exceed the P10 Estimate"
+            },
+            "text": "P90"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "pctDechallengeAttempt": {
+    "name": "pctDechallengeAttempt",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Percentage of Dechallenge Attempts"
+            },
+            "text": "Percentage of Dechallenge Attempts"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "pctDechallengeFail": {
+    "name": "pctDechallengeFail",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Percentage of Dechallenge Failures"
+            },
+            "text": "Percentage of Dechallenge Failures"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "pctDechallengeSuccess": {
+    "name": "pctDechallengeSuccess",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Percentage of Dechallenge Successes"
+            },
+            "text": "Percentage of Dechallenge Successes"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "pctRechallengeAttempt": {
+    "name": "pctRechallengeAttempt",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Percentage of Rechallenge Attempts"
+            },
+            "text": "Percentage of Rechallenge Attempts"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "pctRechallengeFail": {
+    "name": "pctRechallengeFail",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Percentage of Rechallenge Failures"
+            },
+            "text": "Percentage of Rechallenge Failures"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "pctRechallengeSuccess": {
+    "name": "pctRechallengeSuccess",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Percentage of Rechallenge Successes"
+            },
+            "text": "Percentage of Rechallenge Successes"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "personDays": {
+    "name": "personDays",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Total TAR (in days) After Excluded Time was Removed from TAR"
+            },
+            "text": "Total Time at Risk After TAR"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "personDaysPe": {
+    "name": "personDaysPe",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Total TAR (in days) Before Excluded Time Was Removed From TAR"
+            },
+            "text": "Total Time At Risk"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "personKey": {
+    "name": "personKey",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "0"
+            },
+            "text": "0"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "personOutcomes": {
+    "name": "personOutcomes",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Distinct Persons With Outcome After Removing Excluded Time From TAR. A Person Must Have At Least 1 Day TAR To Be Included"
+            },
+            "text": "Persons With Outcome "
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "personOutcomesPe": {
+    "name": "personOutcomesPe",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Distinct Persons With Outcome Before Removing Excluded Time From TAR. A Person Must Have At Least 1 Day TAR To Be Included"
+            },
+            "text": "Persons With Outcome After TAR"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "personsAtRisk": {
+    "name": "personsAtRisk",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Distinct Persons At Risk After Removing Excluded Time From TAR. A Person Must Have At Least 1 Day TAR To Be Included."
+            },
+            "text": "Count of Persons at Risk After TAR"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "personsAtRiskPe": {
+    "name": "personsAtRiskPe",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Distinct Persons at Risk Before Removing Excluded Time From TAR. A Person Must Have at Least 1 Day TAR To Be Included."
+            },
+            "text": "Count of Persons at Risk"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeAttempt": {
+    "name": "rechallengeAttempt",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Rechallenge Attempts"
+            },
+            "text": "Number of Rechallenge Attempts"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeExposureEndDateOffset": {
+    "name": "rechallengeExposureEndDateOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the End Date Field Specified in the rechallengeEvaluationWindow"
+            },
+            "text": "Rechallenge Exposure End Date Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeExposureNumber": {
+    "name": "rechallengeExposureNumber",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Rechallenge Exposures"
+            },
+            "text": "Rechallenge Exposure Number"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeExposureStartDateOffset": {
+    "name": "rechallengeExposureStartDateOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the Start Date Field Specified in the rechallengeEvaluationWindow"
+            },
+            "text": "Rechallenge Exposure Start Date Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeFail": {
+    "name": "rechallengeFail",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Rechallenge Failures"
+            },
+            "text": "Number of Rechallenge Failures"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeOutcomeNumber": {
+    "name": "rechallengeOutcomeNumber",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Rechallenge Outcomes"
+            },
+            "text": "Number of Rechallenge Outcomes"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeOutcomeStartDateOffset": {
+    "name": "rechallengeOutcomeStartDateOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the Start Date Field Specified in the Rechallenge Evaluation Window"
+            },
+            "text": "Rechallenge Outcome Start Date Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "rechallengeSuccess": {
+    "name": "rechallengeSuccess",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Number of Rechallenge Successes"
+            },
+            "text": "Number of Rechallenge Successes"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "refId": {
+    "name": "refId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Reference Identifier"
+            },
+            "text": "Reference ID"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "riskWindowEnd": {
+    "name": "riskWindowEnd",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Risk Window End"
+            },
+            "text": "Risk Window End"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "riskWindowStart": {
+    "name": "riskWindowStart",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Risk Window Start"
+            },
+            "text": "Risk Window Start"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "runId": {
+    "name": "runId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Run Identifier"
+            },
+            "text": "Run Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "runId.1": {
+    "name": "runId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Run Identifier"
+            },
+            "text": "Run Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "sourceDescription": {
+    "name": "sourceDescription",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Database Description"
+            },
+            "text": "Database Description"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "sourceDocumentationReference": {
+    "name": "sourceDocumentationReference",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Database Documentation Reference"
+            },
+            "text": "Database Documentation Reference"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "sourceName": {
+    "name": "sourceName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Name for a Given Database for the Results"
+            },
+            "text": "Database"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "sourceReleaseDate": {
+    "name": "sourceReleaseDate",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Database Release Date"
+            },
+            "text": "Database Release Date"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "sqlCommand": {
+    "name": "sqlCommand",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "0"
+            },
+            "text": "0"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "standardDeviation": {
+    "name": "standardDeviation",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Standard Deviation"
+            },
+            "text": "Standard Deviation"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "startAnchor": {
+    "name": "startAnchor",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Start Anchor"
+            },
+            "text": "Start Anchor"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "startDay": {
+    "name": "startDay",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Start Day"
+            },
+            "text": "Start Day"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "startYear": {
+    "name": "startYear",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Year Strata, Defined by Using the Year the TAR Started"
+            },
+            "text": "Year Strata"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "subgroupId": {
+    "name": "subgroupId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Subgroup Identifier"
+            },
+            "text": "Subgroup Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "subgroupName": {
+    "name": "subgroupName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Name of the Subgroup"
+            },
+            "text": "Subgroup Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "subjectId": {
+    "name": "subjectId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Subject Identifier"
+            },
+            "text": "Subject Identifier"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "sumValue": {
+    "name": "sumValue",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Sum Value"
+            },
+            "text": "Sum Value"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "tarEndOffset": {
+    "name": "tarEndOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the Date Field Specified in the tarEndWith"
+            },
+            "text": "Time at Risk End Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "tarEndWith": {
+    "name": "tarEndWith",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Indicates if the TAR Ends With the ‘start’ or ‘end’ of the Target Cohort Episode."
+            },
+            "text": "Time at Risk End"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "targetCohortDefinitionId": {
+    "name": "targetCohortDefinitionId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Target Cohort Definition Identifier"
+            },
+            "text": "Target Cohort Definition ID"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "targetCohortId": {
+    "name": "targetCohortId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Target Cohort Definition Identifier"
+            },
+            "text": "Target Cohort Definition ID"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "targetName": {
+    "name": "targetName",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Target Cohort Name"
+            },
+            "text": "Target Cohort Name"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "targetOutcomeType": {
+    "name": "targetOutcomeType",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Target Outcome Type"
+            },
+            "text": "Target Outcome Type"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "tarId": {
+    "name": "tarId",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Time at Risk (TAR) ID Variable Ranging From 1 to 4 in Value; 1 = 1 to 14 Days; 2 = 1 to 28 Days; 3 = 1 to 42 Days; 4 = 1 to 90 Days."
+            },
+            "text": "Time at Risk ID"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "tarStartOffset": {
+    "name": "tarStartOffset",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Days Added to the Date Field Specified in the tarStartWith"
+            },
+            "text": "Time at Risk Start Offset"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "tarStartWith": {
+    "name": "tarStartWith",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Indicates if the TAR Starts with the ‘start’ or ‘end’ of the Target Cohort Episode"
+            },
+            "text": "Time at Risk Start"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "timeScale": {
+    "name": "timeScale",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Time Scale"
+            },
+            "text": "Time Scale"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "timeToEvent": {
+    "name": "timeToEvent",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "The Time to Event"
+            },
+            "text": "Time to Event"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  },
+  "vocabularyVersion": {
+    "name": "vocabularyVersion",
+    "header": {
+      "name": "div",
+      "attribs": {
+        "style": "text-decoration: underline; text-decoration-style: dotted; cursor: help"
+      },
+      "children": [
+        {
+          "x": {
+            "opts": {
+              "content": "Vocabulary Version"
+            },
+            "text": "Vocabulary Version"
+          },
+          "width": null,
+          "height": null,
+          "sizingPolicy": {
+            "defaultWidth": null,
+            "defaultHeight": null,
+            "padding": null,
+            "fill": null,
+            "viewer": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": true,
+              "suppress": false,
+              "paneHeight": null
+            },
+            "browser": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "padding": null,
+              "fill": false,
+              "external": false
+            },
+            "knitr": {
+              "defaultWidth": null,
+              "defaultHeight": null,
+              "figure": true
+            }
+          },
+          "dependencies": null,
+          "elementId": null,
+          "preRenderHook": null,
+          "jsHooks": [],
+          "attr_class": ["tippy", "htmlwidget"],
+          "attr_package": "tippy"
+        }
+      ],
+      "attr_class": "shiny.tag"
+    },
+    "attr_class": "colDef"
+  }
+}

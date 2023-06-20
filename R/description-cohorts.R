@@ -53,7 +53,8 @@ descriptionTableViewer <- function(id) {
       
       shiny::uiOutput(ns("TinputsText")),
       
-      resultTableViewer(ns("result-table"))
+      resultTableViewer(ns("result-table"),
+                        downloadedFileName = "targetViewerTable-")
     )
   )
 }
@@ -217,10 +218,13 @@ descriptionTableServer <- function(id,
                           ))
                         )
                         
+                        targetViewercustomColDefs <- ParallelLogger::loadSettingsFromJson("./inst/components-columnInformation/characterization-targetViewer-colDefs.json") #change here
+                        
                         ##custom_colDefs = NULL
                         resultTableServer(id = "result-table",
                                           df = allData,
-                                          colDefsInput = custom_colDefs)
+                                          colDefsInput = targetViewercustomColDefs,#change here
+                                          downloadedFileName = "targetViewerTable-") #change here
                         
                         
                         

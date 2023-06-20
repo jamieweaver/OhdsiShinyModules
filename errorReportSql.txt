@@ -2,15 +2,19 @@ DBMS:
 postgresql
 
 Error:
-org.postgresql.util.PSQLException: ERROR: relation "main.database_meta_data" does not exist
-  Position: 15
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "["
+  Position: 252
 
 SQL:
-SELECT * from main.DATABASE_META_DATA
-  ;
+SELECT dr.*, d.CDM_SOURCE_ABBREVIATION as database_name 
+          FROM ase_01.c_DECHALLENGE_RECHALLENGE dr 
+          inner join ase_01.DATABASE_META_DATA d
+          on dr.database_id = d.database_id
+          where dr.TARGET_COHORT_DEFINITION_ID = [EPI_942] Persons with first COVID vaccine exposure to Pfizer COVID-19 vaccine
+          and dr.OUTCOME_COHORT_DEFINITION_ID = [COVID AESI] Thrombocytopenia events broad;
 
 R version:
-R version 4.2.2 (2022-10-31 ucrt)
+R version 4.1.0 (2021-05-18)
 
 Platform:
 x86_64-w64-mingw32
@@ -26,7 +30,11 @@ Attached base packages:
 
 Other attached packages:
 - OhdsiShinyModules (1.1.0.9000)
+- snakecase (0.11.0)
+- rapportools (1.1)
+- stringr (1.5.0)
+- tictoc (1.2)
 - shiny (1.7.4)
 - ShinyAppBuilder (1.1.2)
-- dplyr (1.1.2)
+- dplyr (1.1.1)
 - testthat (3.1.6)

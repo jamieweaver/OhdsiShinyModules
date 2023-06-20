@@ -4,3 +4,10 @@
 .Ruserdata
 /.idea/
 rsconnect/rconnect.jnj.com/NHall6/phevaluator_v01.dcf
+descriptioncolDefs.csv
+*.csv
+errorReportSql.txt
+R/helpers-componentsCreateCustomColDefList.R
+R/description-dechallengeRechallenge.R
+R/components-data-viewer.R
+R/helpers-componentsCreateCustomColDefList.R

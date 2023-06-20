@@ -76,6 +76,7 @@ createCustomColDefList <- function(rawColNames, niceColNames = NULL,
 #   )
 # )
 
+
 # use the below as a guide to save named colDef list as JSON then read it back!
 # test <- ParallelLogger::saveSettingsToJson(colDefs, "./inst/components-columnInformation/test.json")
 #loadTest <- ParallelLogger::loadSettingsFromJson("./inst/components-columnInformation/test.json")

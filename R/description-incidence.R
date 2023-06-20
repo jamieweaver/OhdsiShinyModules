@@ -63,9 +63,13 @@ descriptionIncidenceViewer <- function(id) {
         ns('downloadInc'), 
         label = "Download"
       ),
-      shinycssloaders::withSpinner(
-        reactable::reactableOutput(ns('incTable'))
-      )
+      # shinycssloaders::withSpinner(
+      #   reactable::reactableOutput(ns('incTable'))
+      # )
+      
+      resultTableViewer(ns("incidenceTable"),
+                        downloadedFileName = "incidenceTable-")
+      
     )
     )
     
@@ -200,105 +204,143 @@ descriptionIncidenceServer <- function(
             )
           )
           
-          
-          allData <- getIncidenceData(
-            targetId = input$targetId,
-            outcomeId = input$outcomeId,
-            connectionHandler = connectionHandler,
-            schema = schema, 
-            incidenceTablePrefix = incidenceTablePrefix,
-            databaseTable = databaseTable
+          #if generate is pushed, extract the data
+          allData <- shiny::eventReactive(         #we care about returning this value, so we use eventReactive
+            eventExpr = input$generate,                     #could add complexity to event if desired
+            {
+              if (is.null(input$targetId) |
+                  is.null(input$outcomeId)) {
+                data.frame()
+              }
+              
+              getIncidenceData(
+                targetId = input$targetId,
+                outcomeId = input$outcomeId,
+                connectionHandler = connectionHandler,
+                schema = schema, 
+                incidenceTablePrefix = incidenceTablePrefix,
+                databaseTable = databaseTable
+              )
+              }
           )
           
-          allDataDownload(allData )
+          
+          # allData <- getIncidenceData(
+          #   targetId = input$targetId,
+          #   outcomeId = input$outcomeId,
+          #   connectionHandler = connectionHandler,
+          #   schema = schema, 
+          #   incidenceTablePrefix = incidenceTablePrefix,
+          #   databaseTable = databaseTable
+          # )
+          # 
+          # allDataDownload(allData )
           
           # do the plots reactively
-          output$incTable <- reactable::renderReactable(
-            {
-              reactable::reactable(
-                data = allData %>% 
-                  dplyr::relocate("tarId", .after = "cdmSourceAbbreviation") %>%
-                  dplyr::relocate("personsAtRisk", .after = "tarEndOffset") %>% 
-                  dplyr::relocate("personDays", .after = "personsAtRisk") %>% 
-                  dplyr::relocate("personOutcomes", .after = "personDays") %>% 
-                  dplyr::relocate("incidenceProportionP100p", .after = "personOutcomes") %>% 
-                  dplyr::relocate("incidenceRateP100py", .after = "incidenceProportionP100p") 
-                  ,
-                filterable = TRUE,
-                showPageSizeOptions = TRUE,
-                pageSizeOptions = c(10, 50, 100,1000),
-                defaultPageSize = 50,
-                striped = TRUE,
-                highlight = TRUE,
-                elementId = "desc-incidence-select",
-                
-                columns = list(
-                  cdmSourceAbbreviation = reactable::colDef( 
-                    name = 'Database',
-                    filterInput = function(values, name) {
-                      shiny::tags$select(
-                        # Set to undefined to clear the filter
-                        onchange = sprintf("Reactable.setFilter('desc-incidence-select', '%s', event.target.value || undefined)", name),
-                        # "All" has an empty value to clear the filter, and is the default option
-                        shiny::tags$option(value = "", "All"),
-                        lapply(unique(values), shiny::tags$option),
-                        "aria-label" = sprintf("Filter %s", name),
-                        style = "width: 100%; height: 28px;"
-                      )
-                    }
-                  ),
-                  tarId = reactable::colDef( 
-                    filterInput = function(values, name) {
-                      shiny::tags$select(
-                        # Set to undefined to clear the filter
-                        onchange = sprintf("Reactable.setFilter('desc-incidence-select', '%s', event.target.value || undefined)", name),
-                        # "All" has an empty value to clear the filter, and is the default option
-                        shiny::tags$option(value = "", "All"),
-                        lapply(unique(values), shiny::tags$option),
-                        "aria-label" = sprintf("Filter %s", name),
-                        style = "width: 100%; height: 28px;"
-                      )
-                    }
-                  ),
-                  refId = reactable::colDef(show = F),
-                  databaseId = reactable::colDef(show = F),
-                  sourceName = reactable::colDef(show = F),
-                  targetCohortDefinitionId = reactable::colDef(show = F),
-                  targetName = reactable::colDef(show = F),
-                  outcomeId = reactable::colDef(show = F),
-                  outcomeCohortDefinitionId = reactable::colDef(show = F),
-                  outcomeName = reactable::colDef(show = F),
-                  outcomeId = reactable::colDef(show = F),
-                  ageId = reactable::colDef(show = F),
-                  genderId = reactable::colDef(show = F),
-                  subgroupId = reactable::colDef(show = F),
-                  incidenceProportionP100p = reactable::colDef(
-                    format = reactable::colFormat(digits = 4)
-                  ),
-                  incidenceRateP100py = reactable::colDef(
-                    format = reactable::colFormat(digits = 4)
-                  )
-                )
-                
-                
-                
-                
-              )
-            }
-          )
+          # the reactable is being rendered when we see output$ and then reactable::renderReactable on other side of <-
+          # reactable::reactable creates the reactable; the main arguments to pass to function include 'data' and 'columns'
+          # find where the reactable::renderReactable find where data is set; allData (or similar) is set above; sometimes allData will be a reactive value
+          # allData above is driven by targetId and outcomeId which is selected by the user
+          
+          # load customColDef for incidence
+          incidenceCustomColDefs <- ParallelLogger::loadSettingsFromJson("./inst/components-columnInformation/characterization-incidence-colDefs.json") #change here
+          
+          resultTableServer(id = "incidenceTable",
+                            df = allData,
+                            colDefsInput = incidenceCustomColDefs,
+                            downloadedFileName = "incidenceTable-")
+          
+          
+          
+          
+          
+          
+        #   output$incTable <- reactable::renderReactable(
+        # #    {
+        #       reactable::reactable(
+        #         data = allData %>% 
+        #           dplyr::relocate("tarId", .after = "cdmSourceAbbreviation") %>%
+        #           dplyr::relocate("personsAtRisk", .after = "tarEndOffset") %>% 
+        #           dplyr::relocate("personDays", .after = "personsAtRisk") %>% 
+        #           dplyr::relocate("personOutcomes", .after = "personDays") %>% 
+        #           dplyr::relocate("incidenceProportionP100p", .after = "personOutcomes") %>% 
+        #           dplyr::relocate("incidenceRateP100py", .after = "incidenceProportionP100p") 
+        #           ,
+        #         filterable = TRUE,
+        #         showPageSizeOptions = TRUE,
+        #         pageSizeOptions = c(10, 50, 100,1000),
+        #         defaultPageSize = 50,
+        #         striped = TRUE,
+        #         highlight = TRUE,
+        #         elementId = "desc-incidence-select",
+        #         
+        #         columns = list(
+        #           cdmSourceAbbreviation = reactable::colDef( 
+        #             name = 'Database',
+        #             filterInput = function(values, name) {
+        #               shiny::tags$select(
+        #                 # Set to undefined to clear the filter
+        #                 onchange = sprintf("Reactable.setFilter('desc-incidence-select', '%s', event.target.value || undefined)", name),
+        #                 # "All" has an empty value to clear the filter, and is the default option
+        #                 shiny::tags$option(value = "", "All"),
+        #                 lapply(unique(values), shiny::tags$option),
+        #                 "aria-label" = sprintf("Filter %s", name),
+        #                 style = "width: 100%; height: 28px;"
+        #               )
+        #             }
+        #           ),
+        #           tarId = reactable::colDef( 
+        #             filterInput = function(values, name) {
+        #               shiny::tags$select(
+        #                 # Set to undefined to clear the filter
+        #                 onchange = sprintf("Reactable.setFilter('desc-incidence-select', '%s', event.target.value || undefined)", name),
+        #                 # "All" has an empty value to clear the filter, and is the default option
+        #                 shiny::tags$option(value = "", "All"),
+        #                 lapply(unique(values), shiny::tags$option),
+        #                 "aria-label" = sprintf("Filter %s", name),
+        #                 style = "width: 100%; height: 28px;"
+        #               )
+        #             }
+        #           ),
+        #           refId = reactable::colDef(show = F),
+        #           databaseId = reactable::colDef(show = F),
+        #           sourceName = reactable::colDef(show = F),
+        #           targetCohortDefinitionId = reactable::colDef(show = F),
+        #           targetName = reactable::colDef(show = F),
+        #           outcomeId = reactable::colDef(show = F),
+        #           outcomeCohortDefinitionId = reactable::colDef(show = F),
+        #           outcomeName = reactable::colDef(show = F),
+        #           outcomeId = reactable::colDef(show = F),
+        #           ageId = reactable::colDef(show = F),
+        #           genderId = reactable::colDef(show = F),
+        #           subgroupId = reactable::colDef(show = F),
+        #           incidenceProportionP100p = reactable::colDef(
+        #             format = reactable::colFormat(digits = 4)
+        #           ),
+        #           incidenceRateP100py = reactable::colDef(
+        #             format = reactable::colFormat(digits = 4)
+        #           )
+        #         )
+        #         
+        #         
+        #         
+        #         
+        #       )
+        #     }
+        #   )
           
         }
       )
       
       # download
-      output$downloadInc <- shiny::downloadHandler(
-        filename = function() {
-          paste('incidence-data-', Sys.Date(), '.csv', sep='')
-        },
-        content = function(con) {
-          utils::write.csv(allDataDownload(), con)
-        }
-      )
+      # output$downloadInc <- shiny::downloadHandler(
+      #   filename = function() {
+      #     paste('incidence-data-', Sys.Date(), '.csv', sep='')
+      #   },
+      #   content = function(con) {
+      #     utils::write.csv(allDataDownload(), con)
+      #   }
+      # )
     
       
       return(invisible(NULL))
