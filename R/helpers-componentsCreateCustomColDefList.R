@@ -65,6 +65,7 @@ createCustomColDefList <- function(rawColNames, niceColNames = NULL,
 
 # examples
 # Define custom column definitions
+# mydf = data.frame(raw = c("name", "age", "country"))
 # customColDefs <- createCustomColDefList(
 #   rawColNames = mydf$raw,
 #   niceColNames = c("Name", "Age", "Country"),

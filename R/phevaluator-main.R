@@ -438,7 +438,12 @@ phevaluatorServer <- function(
                                  html = T
                                  ),
         sql = reactable::colDef(show = F),
-        json = reactable::colDef(show = F)
+        json = reactable::colDef(show = F),
+        startDate = reactable::colDef(show = F),
+        startDate.1 = reactable::colDef(show = F),
+        endDate = reactable::colDef(show = F),
+        endDate.1 = reactable::colDef(show = F)
+        
       )
       
       #define custom column definitions and render the result table
@@ -446,7 +451,7 @@ phevaluatorServer <- function(
 
       
       resultTableServer(id = "algorithmPerformanceResultsTable",
-                        df = dataAlgorithmPerformance(),
+                        df = dataAlgorithmPerformance,
                         colDefsInput = customColDefs,
                         downloadedFileName = "algorithmPerformanceResultsTable-")
       
