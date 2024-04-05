@@ -89,7 +89,7 @@ characterizationTableServer <- function(
           createInputSetting(
             rowNumber = 1,                           
             columnWidth = 6,
-            varName = 'targetIds',
+            varName = 'targetId',
             uiFunction = 'shinyWidgets::pickerInput',
             uiInputs = list(
               label = 'Target: ',
@@ -130,7 +130,7 @@ characterizationTableServer <- function(
           createInputSetting(
             rowNumber = 2,                           
             columnWidth = 6,
-            varName = 'analysisIds',
+            varName = 'analysisId',
             uiFunction = 'shinyWidgets::pickerInput',
             uiInputs = list(
               label = 'Covariate Type: ',
@@ -151,9 +151,7 @@ characterizationTableServer <- function(
       )
       )
       
-      columns <- shiny::reactive({
-        
-        result <- list(
+      columns <- list(
           covariateId = reactable::colDef(
             header = withTooltip("Covariate ID",
                                  "Unique identifier of the covariate")
@@ -171,59 +169,47 @@ characterizationTableServer <- function(
             )
           )
         )
+      for(i in 1:length(inputVals$databaseIds)){
         
-        if(is.null(inputSelected()$targetIds) | is.null(inputSelected()$databaseIds)){
-          return(result) 
-        } else{
-          temp <- expand.grid(inputSelected()$targetIds,inputSelected()$databaseIds)
-          temp[,2] <- as.double(as.character(temp[,2]))
-          
-          for(i in 1:nrow(temp)){
-            
-            targetName = names(inputVals$cohortIds)[temp[i,1] == inputVals$cohortIds]
-            databaseName = names(inputVals$databaseIds)[temp[i,2] == inputVals$databaseIds]
-            
-            result[[length(result) + 1]] <- reactable::colDef(
-              header = withTooltip(
-                paste0("Count-", temp[i,1], '-',temp[i,2]),
-                paste0("The number of patients in database ", databaseName, ' and target ', targetName, ' who has the covariate')
-              )
-            )
-            
-            names(result)[length(result)] <- paste0('countT', temp[i,1], 'D', ifelse(temp[i,2] <0, 'n', ''), abs(temp[i,2]) )
-            
-            result[[length(result) + 1]] <- reactable::colDef(
-              header = withTooltip(
-                paste0("Mean-", temp[i,1], '-', temp[i,2]),
-                paste0("The mean covariate value for patients in database ", databaseName, ' and target ', targetName)
-              ), 
-              format = reactable::colFormat(
-                digits = 3
-              )
-            )
-            names(result)[length(result)] <- paste0('averageT', temp[i,1], 'D', ifelse(temp[i,2] <0, 'n', ''), abs(temp[i,2]) )
-            
-          }
-          return(result) 
-        }
+        databaseName <- names(inputVals$databaseIds)[i]
         
-      })
+        columns[[length(columns) + 1]] <- reactable::colDef(
+          header = withTooltip(
+            paste0("Count-", databaseName),
+            paste0("The number of patients in database ", databaseName, ' who has the covariate')
+          )
+        )
+        names(columns)[length(columns)] <- paste0("count", gsub('[ _-]','', inputVals$databaseIds[i])) 
+        
+        columns[[length(columns) + 1]] <- reactable::colDef(
+          header = withTooltip(
+            paste0("Mean-", databaseName),
+            paste0("The mean covariate value for patients in database ", databaseName)
+          ), 
+          format = reactable::colFormat(
+            digits = 3
+          )
+        )
+        names(columns)[length(columns)] <- paste0("average", gsub('[ _-]','', inputVals$databaseIds[i])) 
+        
+      }
+      
       
       #get results
         resultTable <- shiny::reactive({
           getCohortData(
             connectionHandler = connectionHandler,
             resultDatabaseSettings = resultDatabaseSettings,
-            targetIds = inputSelected()$targetIds,
+            targetId = inputSelected()$targetId,
             databaseIds = inputSelected()$databaseIds,
-            analysisIds = inputSelected()$analysisIds
+            analysisId = inputSelected()$analysisId
           )
         })
 
       resultTableServer(
         id = 'mainTable',
         df = resultTable,
-        colDefsInput = columns()
+        colDefsInput = columns
       ) 
 
       return(invisible(NULL))
@@ -236,33 +222,34 @@ characterizationTableServer <- function(
 getCohortData <- function(
     connectionHandler,
     resultDatabaseSettings,
-    targetIds,
+    targetId,
     databaseIds,
-    analysisIds
+    analysisId
 ){
   
-  if(is.null(targetIds) | is.null(databaseIds)){
+  if(is.null(targetId) | is.null(databaseIds)){
    return(NULL)
   }
   
-  combinations <- expand.grid(targetIds, databaseIds)
-  combinations[,2] <- as.double(as.character(combinations[,2]))
+  databaseIdsSql <- gsub('[ _-]','', databaseIds)
   
 sql <- paste0(
 "select ref.covariate_id, ref.covariate_name, an.analysis_name,",
 
 paste(
-  lapply(1:nrow(combinations), function(i){
+  lapply(1:length(databaseIdsSql), function(i){
     paste0(
-"max(case when temp.selection_id = ",i," then temp.sum_value else 0 end) as count_t",combinations[i,1],'_d',ifelse(combinations[i,2] <0, 'n', ''),abs(combinations[i,2]),",",
-"max(case when temp.selection_id = ",i," then temp.average_value else 0 end) as average_t",combinations[i,1],'_d',ifelse(combinations[i,2] <0, 'n', ''),abs(combinations[i,2])
-)}), collapse = ','),
+"max(case when temp.selection_id = ",i," then temp.sum_value else 0 end) as count",databaseIdsSql[i],',',
+"max(case when temp.selection_id = ",i," then temp.average_value else 0 end) as average",databaseIdsSql[i]
+)
+}), collapse = ','
+),
 
 " from @schema.@c_table_prefixcovariate_ref ref
  inner join @schema.@c_table_prefixanalysis_ref an
  on an.RUN_ID = ref.RUN_ID and
   an.analysis_id = ref.analysis_id and
-  ref.analysis_id in (@analysis_ids)
+  ref.analysis_id in (@analysis_id)
   
 
  left join
@@ -271,7 +258,7 @@ paste(
   
   
 paste(
-    lapply(1:nrow(combinations), function(i){
+    lapply(1:length(databaseIdsSql), function(i){
       paste0(
         "
   select 
@@ -282,7 +269,7 @@ paste(
   inner join
   (select * from @schema.@c_table_prefixcohort_details
     where DATABASE_ID = '@database",i,"' and
-    TARGET_COHORT_ID = @target",i," and COHORT_TYPE = 'T'
+    TARGET_COHORT_ID = @target_id and COHORT_TYPE = 'T'
   ) as cd",i,"
   on co",i,".COHORT_DEFINITION_ID = cd",i,".COHORT_DEFINITION_ID
   and co",i,".DATABASE_ID = cd",i,".DATABASE_ID"
@@ -302,18 +289,18 @@ ref.covariate_id, ref.covariate_name, an.analysis_name
 
 
   inputs <- c(
-    as.character(combinations$Var2), 
-    as.character(combinations$Var1), 
+    as.character(databaseIds), 
+    as.character(targetId), 
     resultDatabaseSettings$schema, 
     resultDatabaseSettings$cTablePrefix,
-    paste0(analysisIds, collapse = ',')
+    analysisId
   )
   names(inputs) <- c(
-    paste0('database', 1:nrow(combinations)), 
-    paste0('target', 1:nrow(combinations)),
+    paste0('database', 1:length(databaseIds)), 
+    'target_id',
     'schema',
     'c_table_prefix',
-    'analysis_ids'
+    'analysis_id'
   )
   inputs <- as.list(inputs)
   inputs$sql <- sql

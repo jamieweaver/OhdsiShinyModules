@@ -41,7 +41,14 @@ characterizationAggregateFeaturesViewer <- function(id) {
     
     # module that does input selection for a single row DF
     inputSelectionViewer(
-      id = ns("input-selection")
+      id = ns("input-selection-target")
+    ),
+    shiny::conditionalPanel(
+      condition = 'input.generate != 0',
+      ns = shiny::NS(ns("input-selection-target")),
+      inputSelectionViewer(
+        id = ns("input-selection")
+      )
     ),
     
     # COV: RUN_ID	DATABASE_ID	COHORT_DEFINITION_ID	COVARIATE_ID	SUM_VALUE	AVERAGE_VALUE
@@ -56,27 +63,32 @@ characterizationAggregateFeaturesViewer <- function(id) {
     
     shiny::conditionalPanel(
       condition = 'input.generate != 0',
-      ns = shiny::NS(ns("input-selection")),
+      ns = shiny::NS(ns("input-selection-target")),
       
-      shinydashboard::tabBox(
-        width = "100%",
-        # Title can include an icon
-        title = shiny::tagList(shiny::icon("gear"), "Table and Plots"),
-        shiny::tabPanel("Binary Feature Table", 
-                        resultTableViewer(ns('binaryTable'))
-        ),
-        shiny::tabPanel("Continuous Feature Table", 
-                        resultTableViewer(ns('continuousTable'))
-        ),
-        shiny::tabPanel("Binary Feature Plot",
-                        shinycssloaders::withSpinner(
-                          plotly::plotlyOutput(ns("binaryPlot"))
-                        )
-        ),
-        shiny::tabPanel("Continuous Feature Plot", 
-                        shinycssloaders::withSpinner(
-                          plotly::plotlyOutput(ns("continuousPlot"))
-                        )
+      shiny::conditionalPanel(
+        condition = 'input.generate != 0',
+        ns = shiny::NS(ns("input-selection")),
+        
+        shinydashboard::tabBox(
+          width = "100%",
+          # Title can include an icon
+          title = shiny::tagList(shiny::icon("gear"), "Table and Plots"),
+          shiny::tabPanel("Binary Feature Table", 
+                          resultTableViewer(ns('binaryTable'))
+          ),
+          shiny::tabPanel("Continuous Feature Table", 
+                          resultTableViewer(ns('continuousTable'))
+          ),
+          shiny::tabPanel("Binary Feature Plot",
+                          shinycssloaders::withSpinner(
+                            plotly::plotlyOutput(ns("binaryPlot"))
+                          )
+          ),
+          shiny::tabPanel("Continuous Feature Plot", 
+                          shinycssloaders::withSpinner(
+                            plotly::plotlyOutput(ns("continuousPlot"))
+                          )
+          )
         )
       )
     )
@@ -112,19 +124,29 @@ characterizationAggregateFeaturesServer <- function(
         resultDatabaseSettings = resultDatabaseSettings
       )
       
+      outcomeChoices <- do.call('c', options$outcomes)
+      outcomeChoices <- data.frame(
+        id = outcomeChoices,
+        name = names(outcomeChoices)
+        )
+      outcomeChoices <- unique(outcomeChoices)
+      tempnames <- outcomeChoices$name
+      outcomeChoices <- as.list(outcomeChoices$id)
+      names(outcomeChoices) <- tempnames
+
       # get databases
       databases <- getAggregateFeatureDatabases(
         connectionHandler = connectionHandler,
         resultDatabaseSettings = resultDatabaseSettings
       )
       
-      # input selection component
-      inputSelected <- inputSelectionServer(
-        id = "input-selection", 
+      # input selection target
+      inputSelectedTarget <- inputSelectionServer(
+        id = "input-selection-target", 
         inputSettingList = list(
           createInputSetting(
             rowNumber = 1,                           
-            columnWidth = 4,
+            columnWidth = 12,
             varName = 'targetIds',
             uiFunction = 'shinyWidgets::pickerInput',
             uiInputs = list(
@@ -141,16 +163,44 @@ characterizationAggregateFeaturesServer <- function(
                 virtualScroll = 50
               )
             )
-          ),
+          )
+        )
+      )
+      
+      shiny::observeEvent(inputSelectedTarget()$targetIds, {
+        # update outcomes
+        inds <- which(names(options$outcomes) %in% inputSelectedTarget()$targetIds)
+          if(length(inds)>0){
+            otemp <- lapply(inds, function(i){options$outcomes[[i]]})
+            if(length(otemp)>1){
+            otemp  <- do.call('append', otemp)[unique(names(do.call('append', otemp)))]
+            } else{
+              otemp <- otemp[[1]]
+            }
+            shinyWidgets::updatePickerInput(
+              session = session,
+              inputId = 'input-selection-input_1', 
+              choices =  otemp, 
+              selected = otemp[1]
+              )
+          }
+        
+        }
+      )
+      
+      
+      inputSelected <- inputSelectionServer(
+        id = "input-selection", 
+        inputSettingList = list(
           createInputSetting(
             rowNumber = 1,                           
-            columnWidth = 4,
+            columnWidth = 8,
             varName = 'outcomeIds',
             uiFunction = 'shinyWidgets::pickerInput',
             uiInputs = list(
               label = 'Outcome: ',
-              choices = options$outcomes,
-              selected = options$outcomes[1],
+              choices = outcomeChoices,
+              selected = outcomeChoices[1],
               multiple = F,
               options = shinyWidgets::pickerOptions(
                 actionsBox = TRUE,
@@ -233,11 +283,13 @@ characterizationAggregateFeaturesServer <- function(
         )
       )
       
+      
+      
       allData <- shiny::reactive({
         characterizationGetAggregateData(
         connectionHandler = connectionHandler,
         resultDatabaseSettings = resultDatabaseSettings,
-        targetId = inputSelected()$targetIds,
+        targetId = inputSelectedTarget()$targetIds,
         outcomeId = inputSelected()$outcomeIds,
         riskWindowStart = options$tarList[[which(options$tars == ifelse(is.null(inputSelected()$tarIds),options$tars[1],inputSelected()$tarIds))]]$riskWindowStart, 
         riskWindowEnd = options$tarList[[which(options$tars == ifelse(is.null(inputSelected()$tarIds),options$tars[1],inputSelected()$tarIds))]]$riskWindowEnd,
@@ -440,8 +492,26 @@ getAggregateFeatureOptions <- function(
   targets <- unique(options$targetCohortId)
   names(targets) <- unique(options$target)
   
-  outcomes <- unique(options$outcomeCohortId)
-  names(outcomes) <- unique(options$outcome)
+  
+  # outcomes is a list of outcomes per targetId
+  outcomes <- lapply(targets, function(tid){
+    if(sum(options$targetCohortId == tid)>0){
+      tempout <- unique(options[options$targetCohortId == tid, c('outcomeCohortId','outcome')])
+      outcomes <- tempout$outcomeCohortId
+      names(outcomes) <- tempout$outcome
+      outcomes
+    } else{
+      tempout <- c(0)
+      names(tempout) <- 'No Outcome'
+      tempout
+    }
+  })
+  names(outcomes) <- targets
+  #tempout <- unique(options[, c('outcomeCohortId','outcome')])
+  #outcomes <- tempout$outcomeCohortId
+  #names(outcomes) <- tempout$outcome
+  #outcomes <- unique(options$outcomeCohortId)
+  #names(outcomes) <- unique(options$outcome)
   
   options <- unique(
     options %>% 
@@ -691,7 +761,7 @@ characterizationGetAggregateData <- function(
   tno.count_value as comp2_count,
   case when (t.count_value*t.average_value - tno.count_value*tno.average_value)*1.0/(cc.row_count-tnocc.row_count) is NULL then 0 else (t.count_value*t.average_value - tno.count_value*tno.average_value)*1.0/(cc.row_count-tnocc.row_count) end as comp1_@index,
   case when tno.average_value is NULL then 0 else tno.average_value end  as comp2_@index,
-  sqrt( (square(t.standard_deviation)*cc.row_count - square(tno.standard_deviation)*tnocc.row_count)/ (cc.row_count - tnocc.row_count)) as comp1sd_@index,
+  sqrt( abs(square(t.standard_deviation)*cc.row_count - square(tno.standard_deviation)*tnocc.row_count)/ (cc.row_count - tnocc.row_count)) as comp1sd_@index,
   tno.standard_deviation as comp2sd_@index,
   cov_ref.COVARIATE_NAME, 
   an_ref.ANALYSIS_NAME
