@@ -55,6 +55,10 @@ aboutViewer <- function(id = 'homepage') {
       shinydashboard::box(width = "100%",
                           shiny::htmlTemplate(
                             system.file("about-www", "about.html", package = utils::packageName())
+                          )),
+      shinydashboard::box(width = "100%",
+                          shiny::htmlTemplate(
+                            system.file("about-www", "about-click-boxes.html", package = utils::packageName())
                           ))
       # )
     ),
