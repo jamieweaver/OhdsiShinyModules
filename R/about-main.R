@@ -46,6 +46,7 @@ aboutHelperFile <- function() {
 aboutViewer <- function(id = 'homepage') {
   ns <- shiny::NS(id)
   
+  
   #shinydashboard::dashboardBody(
   shiny::div(
     shiny::fluidRow(
